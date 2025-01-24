@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <!-- Video Background Section -->
+    <div class="video-container">
+        <video id="background-video" autoplay loop playsinline>
+            <source src="videoplayback.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Button to mute/unmute video -->
+    <button onclick="toggleMute()" class="play-btn" id="mute-unmute-btn">Mute</button>
+
+    <!-- Proposal Section -->
+    <section class="proposal-page">
+        <div class="proposal-container fade-in">
+            <p class="proposal-text">
+                <h1 class="glow"> A Heartfelt Confession 💙</h1> <font color="white" >
+                    I don’t know where to start, but I’ll try my best to share what’s been on my mind lately. Over the past few days, I’ve noticed something changing within me—something I didn’t see coming. After 3.5 years of knowing you, of sharing laughter and moments that mean so much, I’ve found myself feeling something more.
+
+                    It’s only recently that I realized just how much you mean to me, and it’s been impossible to ignore. You’ve always been special to me, but now, it feels different—like the kind of special that makes my heart race a little faster and my mind drift to you even more often.
+                    
+                    I created this website because words alone weren’t enough to say what I’ve been feeling. You’ve inspired me, made my days brighter, and shown me what it means to have a connection so rare and meaningful.
+                    
+                    I don’t expect anything from this, but I wanted you to know the truth: You are someone I care about deeply, and these feelings are something I couldn’t keep to myself anymore.
+                    
+                    If nothing else, I hope this makes you smile and reminds you of just how incredible you are.  </font>
+            </p> <br>
+            <button onclick="location.href='5.html'" class="confession-btn">Go to the Final Page →</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with ❤️ by Someone Who Thinks You’re Amazing</p>
+    </footer>
+
+    <script>
+        // Function to toggle mute/unmute
+        function toggleMute() {
+            const video = document.getElementById('background-video');
+            const muteButton = document.getElementById('mute-unmute-btn');
+            
+            if (video.muted) {
+                video.muted = false;
+                muteButton.innerText = "Mute"; // Change text to "Mute"
+            } else {
+                video.muted = true;
+                muteButton.innerText = "Unmute"; // Change text to "Unmute"
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en', // Your page's default language
+                includedLanguages: 'hi', // List the languages you want to support (e.g., Spanish, French, German, Italian)
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

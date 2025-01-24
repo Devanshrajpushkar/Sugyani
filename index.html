@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body class="fade-in-body">
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="cube-loader">
+            <div class="cube-top"></div>
+            <div class="cube-wrapper">
+                <span style="--i:0" class="cube-span"></span>
+                <span style="--i:1" class="cube-span"></span>
+                <span style="--i:2" class="cube-span"></span>
+                <span style="--i:3" class="cube-span"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo"> <font face="Dancing Script">For You, Special 🫶</font></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="1a.html">For You</a></li>
+            <li><a href="1b.html">Contacts </a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="hero">
+        <h1 class="glow"> <font size="6" face="aerial"> To the One who holds My Heart💖, <font face="Cursive" size="8" color="#d60a0a"> <b>Sugyani</b> 🌕 </font></h1>
+        <h2 class="greeting"> <font size="4"> I Hope You're Smiling Right Now </font></h2>
+        
+        <p class="message">This website is created especially for you 🥹 by someone who deeply treasures you. For over 3.5 years, even though we’ve never met in person, you’ve been my best friend, my confidante, and the brightest light in my life. But recently, I’ve realized that what I feel for you goes beyond friendship—from past some time, I’ve started catching feelings for you, and I couldn’t keep that to myself anymore.
+
+            Sometimes, in the middle of an ordinary life, someone extraordinary appears and changes everything, even from miles away. That’s what you’ve done for me, Sugyani. From the moment we first connected, you’ve stood out in a way no one else ever has.
+            
+            This website is my way of expressing what words alone couldn’t capture. I want you to know just how much you mean to me, no matter the distance between us.<br>
+            I am very nervous, pata nahi kya ho rha hai😭  <br> 
+            💡 Click on every "For You" button in the top right corner of each page to explore something special I’ve made just for you. <br>
+            💖 And when you're ready, click the button below to uncover the rest of our story.
+
+           <br> Volume badha lena, like 40-50%.
+
+
+        
+        </p>
+              
+             
+        <button onclick="location.href='2.html'" class="cta-button">See What's Next →</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Coded with ❤️ by Someone Who thinks you're Amazing </p>
+    </footer>
+    
+    <script>
+        // JavaScript to handle the slide-up effect for the header on scroll
+        let lastScrollTop = 0;
+        const nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                nav.style.transform = 'translateY(-100%)';
+            } else {
+                nav.style.transform = 'translateY(0)';
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; 
+        });
+
+        // Loading screen hide logic
+        window.addEventListener('load', function () {
+            const loadingScreen = document.getElementById('loading-screen');
+            loadingScreen.style.display = 'none';
+        });
+    </script>
+
+    <!-- Google Translate Widget -->
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'hi',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
